@@ -1,0 +1,10 @@
+tasks/migrations
+
+# DB
+db.sqlite3
+
+# Django stuff:
+local_settings.py
+
+# Environments
+env/

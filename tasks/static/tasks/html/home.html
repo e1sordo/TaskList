@@ -1,0 +1,22 @@
+<div class='row text-center'>
+	<div class='col-sm-4 col-sm-offset-4'>
+		<h1>All Tasks</h1>
+
+		<button ui-sref="add-task" class='btn btn-primary btn-lg' style='margin-bottom:20px;'>Add Task</button>
+
+		<ul class="list-group">
+			<li ng-repeat="task in tasks" class="list-group-item">
+
+                <input title="task.title" type="text" value="{{task.title}}" ng-model="task.title" class="form-control" />
+
+                <button type="button" class="btn btn-sm btn-primary" ng-click="updateTask(task)">
+                    <span class="glyphicon glyphicon-pencil"></span> Rename
+                </button>
+                <button type="button" class="btn btn-sm btn-danger" ng-click="deleteTask(task.id)">
+                    <span class="glyphicon glyphicon-remove"></span> Delete
+                </button>
+
+			</li>
+		</ul>
+	</div>
+</div>
