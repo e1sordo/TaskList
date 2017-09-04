@@ -2,5 +2,8 @@
 Simple SPA 'tasks list' on Django &amp; AngularJS
 
 ## Run
-You need to runserver on the 8000 port. 
-* `$ python manage.py runserver localhost:8000`
+* `$ ./manage.py makemigrations`
+* `$ ./manage.py migrate`
+* `$ ./manage.py runserver localhost:8000`
+
+http://localhost:8000/
